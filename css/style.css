@@ -1,0 +1,238 @@
+body{
+    margin: 0px;
+    overflow-x: hidden; /* Isso aqui foi uma gambiarra para não deixar rolar a pagina para o lado e quebrar o css*/
+}
+.corpo{
+  background-color: #D2A8A8;
+}
+
+header{
+    background-color: #BF2626;
+}
+
+.logo{
+    margin: 10px 10px 20px;
+    height: 150px;
+    width: 150px;
+}
+
+nav{
+    font-size: 28px;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.cabecalho{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0px 10px auto;
+}
+/*inicio do css dos botoes lateria*/
+#mySidenav a {
+    position: absolute;
+    right: -70px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 75px;
+    text-decoration: none;
+    font-size: 17px;
+    color: white;
+    border-radius: 12px;
+  }
+  
+  #mySidenav a:hover {
+    right: 0;
+  }
+  
+  #inicio {
+    top: 10px;
+    background-color: #65CA82;
+  }
+  
+  #biografia {
+    top: 65px;
+    background-color: #26BF52;
+  }
+  
+  #lancamentos {
+    top:120px;
+    background-color: #1C8C3C;
+  }
+  /*Fim do css dos botoes laterais*/
+.titulo {
+  font-size:30px;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  
+}
+
+p{
+  margin-left: 10px;
+  margin-right: 10px;
+  text-indent: 3ch;
+  margin-bottom: 2em;
+  font-size: medium;
+}
+
+ol{
+  margin-left:20px ;
+}
+
+p.DropCap::first-letter{
+  font-size: 200%;
+  font-style: italic;
+  color:black;
+}
+
+.configFotoFim{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.tituloTabela{
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#customers{
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 700px;
+  margin: 10px auto;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #BF2626;
+  color: white;
+}
+
+/* inicio doefeito da imagem*/
+.cetralizaImagem{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px 0;
+}
+
+.posicaoTamanho{
+  position: relative;
+  width: 700px;
+}
+
+.imagem {
+  display: block;
+  width: 700px;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #BF2626;
+;
+}
+
+.posicaoTamanho:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  
+}
+
+/*fim do efeito da imagem*/ 
+
+.rodapeInicio{
+  background-color: #BF2626;
+  margin: auto;
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* esse rodapé é diferente pois a pagina e curta e ele tava ficando no meio da pagina*/
+}
+.rodapeGeral{
+  background-color: #BF2626;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.textoRodape{
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+
+.principaisLancamentos{
+  background-color:#44c767;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+  margin-left: 45%;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+.principaisLancamentos:hover{
+	background-color:#5cbf2a;
+}
+.principaisLancamentos:active{
+  position:relative;
+	top:1px;
+}
+
+.rodapePrincpais{
+  background-color: #BF2626;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
